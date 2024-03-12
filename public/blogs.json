@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co/QXjcz8k/denys-nevozhai-z0n-Vqfr-Oq-WA-unsplash.jpg",
+      "author": "Alice Smith",
+      "title": "The Mystery of the Hidden Temple",
+      "author_img": "https://i.ibb.co/9sHSqGr/shakespeare-67698-1280.jpg",
+      "posted_date": "2024-03-12",
+      "reading_time": 30,
+      "hashtags": ["adventure", "mystery", "exploration"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co/hFwxwqT/corinne-kutz-t-MI2-r5-Nfo-unsplash.jpg",
+      "author": "Bob Johnson",
+      "title": "The Science of Time Travel",
+      "author_img": "https://example.com/author2.jpg",
+      "posted_date": "2024-03-11",
+      "reading_time": 25,
+      "hashtags": ["science", "time-travel", "physics"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co/fxLXS1W/technology-communication-icons-symbols-concept.jpg",
+      "author": "Charlie Brown",
+      "title": "Cooking with Passion",
+      "author_img": "https://i.ibb.co/nzs8sQJ/mark-twain-67793-1280.jpg",
+      "posted_date": "2024-03-10",
+      "reading_time": 40,
+      "hashtags": ["cooking", "recipes", "food"]
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co/s6X8qfQ/a-l-vrqa96bol-Ac-unsplash.jpg",
+      "author": "Diana Lee",
+      "title": "The Art of Mindfulness",
+      "author_img": "https://i.ibb.co/fGHwXBv/oscar-wilde-1165545-1280.jpg",
+      "posted_date": "2024-03-09",
+      "reading_time": 20,
+      "hashtags": ["mindfulness", "meditation", "wellness"]
+    },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co/hsxwSb2/clark-tibbs-oq-Stl2-L5ox-I-unsplash.jpg",
+      "author": "Ethan Wilson",
+      "title": "Exploring the Universe",
+      "author_img": "https://i.ibb.co/TMssy9v/edgar-allan-poe-6393223-1280.png",
+      "posted_date": "2024-03-08",
+      "reading_time": 35,
+      "hashtags": ["space", "exploration", "cosmology"]
+    }
+  ]
+  
