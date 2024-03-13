@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import bookmark from '../../assets/images/bookmark.svg'
 
 
-const Blog = ({blog,handleAddToBookmark}) => {
+const Blog = ({blog, handleAddToBookmark, handleMarkAsRead}) => {
     console.log(blog)
     const {title, cover, author, author_img, posted_date, reading_time, hashtags }= blog;
     return (
@@ -19,7 +19,7 @@ const Blog = ({blog,handleAddToBookmark}) => {
                 </div>
                 <div >
                     <span  className='text-[#11111199] font-medium text-xl mx-1'>{reading_time} min read</span>
-                    <button><img src={bookmark} alt="" /> </button>
+                    <button onClick={()=>handleAddToBookmark(blog)}><img src={bookmark} alt="" /> </button>
                 </div>
             </div>
             <h2 className='text-4xl mt-4'>{title}</h2>
@@ -29,7 +29,7 @@ const Blog = ({blog,handleAddToBookmark}) => {
                     hashtags.map(hash => <span key={blog.id}> <a href="">#{hash}</a></span>)
                 }
             </p>
-            <button className='mt-4 '><a href="">Mark as Read</a></button>
+            <button onClick={()=> handleMarkAsRead(reading_time)} className='mt-4 text-purple-800 font-bold underline'>Mark as Read </button>
             
         </div>
     );
@@ -37,5 +37,7 @@ const Blog = ({blog,handleAddToBookmark}) => {
 
 Blog.propTypes ={
     blog: PropTypes.object.isRequired
+    // handleAddToBookmark: PropTypes.func
+    
 }
 export default Blog;
