@@ -15,10 +15,17 @@ function App() {
   }
 
   const [readingTime,setReadingTime]= useState(0) /* state e ki dekhabo array naki kotkhon porsi tar time, shonkha dekhabo.default 0*/
-  const handleMarkAsRead = time =>{
+  const handleMarkAsRead = (time, id) =>{
     console.log('marking as read', time)
     const newReadingTime = readingTime + time
     setReadingTime(newReadingTime)
+
+    //remove the read blog from bookmark
+    /* amra jodi kono id dei,taile id dhore amra remove korte parbo */
+    console.log('remove bookmark', id)
+    const remainingBookmarks = bookmarks.filter(bookmark => bookmark.id !== id)
+    setBookmarks(remainingBookmarks)
+    /*bookmarks e jegula ase shekhan theke filter korbo, kore amra alada alada kore bookmark pailam,ekhon prottek bookmark er j id ase (bookmark.id) sheta not equals to id , mane ami jei id ta markasread korsi oita na, oita baade baki gula deo  */
   }
 
   return (

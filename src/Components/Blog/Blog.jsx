@@ -3,11 +3,11 @@ import bookmark from '../../assets/images/bookmark.svg'
 
 
 const Blog = ({blog, handleAddToBookmark, handleMarkAsRead}) => {
-    console.log(blog)
-    const {title, cover, author, author_img, posted_date, reading_time, hashtags }= blog;
+    // console.log(blog)
+    const {id, title, cover, author, author_img, posted_date, reading_time, hashtags }= blog;
     return (
         <div className='mb-20'>
-            <img className='rounded-lg' src={cover} alt={`Cover picture of the title ${title}`} />
+            <img className='w-full rounded-lg' src={cover} alt={`Cover picture of the title ${title}`} />
             <div className='flex justify-between mt-5'>
                 <div className='flex'>
                     <img className='w-[60px] h-[60px] rounded-full bg-gray-100
@@ -26,10 +26,10 @@ const Blog = ({blog, handleAddToBookmark, handleMarkAsRead}) => {
            
             <p className='text-xl font-medium text-[#11111199] mt-4'>
                 {
-                    hashtags.map(hash => <span key={blog.id}> <a href="">#{hash}</a></span>)
+                    hashtags.map((hash, idx) => <span key={idx}> <a href="">#{hash}</a></span>)
                 }
             </p>
-            <button onClick={()=> handleMarkAsRead(reading_time)} className='mt-4 text-purple-800 font-bold underline'>Mark as Read </button>
+            <button onClick={()=> handleMarkAsRead(reading_time, id)} className='mt-4 text-purple-800 font-bold underline'>Mark as Read </button>
             
         </div>
     );
